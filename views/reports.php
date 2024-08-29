@@ -102,14 +102,8 @@
     </script>
 
     <!-- JavaScript for "Check All" functionality -->
-    <script>
-        document.getElementById('check-all').addEventListener('change', function() {
-            var checkboxes = document.querySelectorAll('.school-checkbox');
-            for (var checkbox of checkboxes) {
-                checkbox.checked = this.checked;
-            }
-        });
-    </script>
+    <script src="../assets/js/reports.js"></script>
+    
 </div>
 
 <?php include 'footer.php'; ?>

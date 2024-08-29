@@ -20,30 +20,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Optional custom CSS for additional styling -->
-    <style>
-        /* Custom styles for the header */
-        .navbar-custom {
-            background-color: #343a40; /* Dark gray background for the navbar */
-        }
+    <link rel="stylesheet" href="../assets/css/header.css">
 
-        .navbar-custom .navbar-brand {
-            color: #ffffff; /* White text for the brand */
-            font-weight: bold; /* Make brand text bold */
-        }
+    <!-- CSS to style for footer -->
+    <link rel="stylesheet" href="../assets/css/footer.css">
 
-        .navbar-custom .navbar-nav .nav-link {
-            color: #ffffff; /* White text for navigation links */
-        }
-
-        .navbar-custom .navbar-brand:hover,
-        .navbar-custom .navbar-nav .nav-link:hover {
-            color: #f8f9fa; /* Light gray text on hover */
-        }
-
-        .container {
-            padding-top: 30px; /* Padding at the top of the container */
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar for navigation -->

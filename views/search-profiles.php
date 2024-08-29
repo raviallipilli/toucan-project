@@ -1,44 +1,29 @@
 <?php include 'header.php'; ?>
 
+<!-- Search Profiles Container -->
 <div class="search-container">
+    <!-- Page Heading -->
     <h1 class="mt-5">Search Profiles</h1>
+    
+    <!-- Form Group for Search Input -->
     <div class="form-group mt-4">
+        <!-- Label for the search input field -->
         <label for="searchName">Enter Name:</label>
+        <!-- Input field for entering the name to search -->
         <input type="text" id="searchName" class="form-control">
     </div>
-    <button id="searchButton" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+    
+    <!-- Button to trigger the search action -->
+    <button id="searchButton" class="btn btn-primary">
+        <!-- Search icon from Font Awesome -->
+        <i class="fa-solid fa-magnifying-glass"></i> Search
+    </button>
+    
+    <!-- Container to display search results -->
     <div id="results" class="mt-4"></div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script>
-    $(document).ready(function() {
-        // Event handler for the Search button
-        $('#searchButton').click(function() {
-            var name = $('#searchName').val();
-            
-            // Check if the input field is empty
-            if (name.trim() === '') {
-                $('#results').html('<p class="text-danger">Please enter a name to search.</p>');
-                return;
-            }
-
-            // Perform an AJAX request to the server
-            $.ajax({
-                url: 'task2.php', // The URL of the PHP script handling the request
-                type: 'POST', // Use POST method to send data
-                data: { name: name }, // Data to be sent to the server
-                success: function(response) {
-                    // On successful response, display the results
-                    $('#results').html(response);
-                },
-                error: function() {
-                    // Display an error message if the request fails
-                    $('#results').html('<p class="text-danger">An error occurred while processing your request.</p>');
-                }
-            });
-        });
-    });
-</script>
+<!-- JavaScript file for handling search functionality -->
+<script src="../assets/js/search-profiles.js"></script>
 
 <?php include 'footer.php'; ?>
