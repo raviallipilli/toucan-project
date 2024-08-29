@@ -1,0 +1,13 @@
+# Enable the RewriteEngine module for URL rewriting
+RewriteEngine On
+
+# Condition: Check if the requested file does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Condition: Check if the requested directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rule: Rewrite all requests to index.php with a query parameter 'url'
+# The [QSA] flag appends the original query string to the rewritten URL
+# The [L] flag stops further rewriting once this rule matches
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
