@@ -28,32 +28,30 @@
 </head>
 <body>
     <!-- Navbar for navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-custom">
         <a class="navbar-brand" href="/">ToucanTech</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+
+        <div>
+            <ul class="navbar-nav">
+                <li>
                     <a class="nav-link" href="../tasks/task1.php">Task 1: SQL Query</a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="../tasks/task2.php">Task 2: Search Profiles</a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="../tasks/task3.php">Task 3: ToucanTech Print</a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="../tasks/task4.php">Task 4: Legacy PHP Function</a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="../tasks/task5a.php">Task 5a: Add Member & View by School</a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="../tasks/task5b.php">Task 5b: School Member Count & CSV</a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <a class="nav-link" href="../tasks/task5c.php">Task 5c: SQL Query</a>
                 </li>
             </ul>

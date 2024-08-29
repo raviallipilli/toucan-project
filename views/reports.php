@@ -74,7 +74,7 @@
 
     <!-- Bar Chart for School Member Counts -->
     <h1>Chart View:</h1>
-    <h2 class="mt-4">Member Counts by School</h2>
+    <h2>Member Counts by School</h2>
     <canvas id="memberChart"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>

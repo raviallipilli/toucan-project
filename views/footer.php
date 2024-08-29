@@ -2,7 +2,7 @@
 <footer class="container mt-5 py-4 border-top">
     <div class="row">
         <div class="col text-center">
-            <p class="mb-0">&copy; <?php echo date("Y"); ?> ToucanTech. All rights reserved.</p>
+            <p>&copy; <?php echo date("Y"); ?> ToucanTech. All rights reserved.</p>
         </div>
     </div>
 </footer>
