@@ -1,0 +1,13 @@
+{
+    "name": "lucky/toucan-project",
+    "description": "A project for ToucanTech tasks",
+    "authors": [
+        {
+            "name": "Ravi Allipilli",
+            "email": "luckyravi17@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0"
+    }
+}

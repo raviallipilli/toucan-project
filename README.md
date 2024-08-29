@@ -143,6 +143,11 @@ cd toucan-project
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
+## Note
+Composer was not used in this project. However, the project is structured in a way that would facilitate the integration of Composer in the future. As no third-party packages were utilized in this project, a dependency manager was not required. The project is designed to be easily extendable and can incorporate a dependency manager, such as Composer, should the need arise.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
 ## Conclusion
 The project is fully documented with comments and instructions where necessary. For detailed information on specific features and codebase, refer to the codebase and comments within the files.
 
