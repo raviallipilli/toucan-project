@@ -17,7 +17,7 @@ if (isset($_GET['country'])) {
 }
 
 // Check if the download CSV request is set and if any schools are selected
-if (isset($_GET['download_csv']) && !empty($_GET['schools'])) {
+if (isset($_GET['download-csv']) && !empty($_GET['schools'])) {
     // Sanitize and validate school IDs to prevent SQL Injection and ensure integers
     $selectedSchools = array_map('intval', $_GET['schools']); 
 

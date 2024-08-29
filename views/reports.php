@@ -63,7 +63,7 @@
         <!-- Submit button for downloading CSV -->
         <b>
             <p>CSV report listing each member, their email address, and school for the selected schools.
-                <button style="float: right;" type="submit" name="download_csv" value="true" class="btn btn-primary">
+                <button style="float: right;" type="submit" name="download-csv" value="true" class="btn btn-primary">
                     <i class="fa fa-download" aria-hidden="true"></i> Download CSV
                 </button>
             </p>
@@ -75,11 +75,11 @@
     <!-- Bar Chart for School Member Counts -->
     <h1>Chart View:</h1>
     <h2>Member Counts by School</h2>
-    <canvas id="memberChart"></canvas>
+    <canvas id="reports-chart"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        var ctx = document.getElementById('memberChart').getContext('2d');
-        var memberChart = new Chart(ctx, {
+        var ctx = document.getElementById('reports-chart').getContext('2d');
+        var reportsChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: <?php echo json_encode(array_column($schoolCounts, 'school_name')); ?>,

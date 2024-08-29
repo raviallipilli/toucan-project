@@ -4,7 +4,7 @@
 
 <!-- Form to add a new member -->
 <!-- The form uses POST method to submit data to the current page -->
-<form method="POST" action="">
+<form method="POST">
 
     <!-- Display success or error messages -->
     <?php if (isset($_GET['msg'])) { ?>

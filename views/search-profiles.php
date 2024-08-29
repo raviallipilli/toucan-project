@@ -1,12 +1,12 @@
 <?php include 'header.php'; ?>
 
 <!-- Search Profiles Container -->
-<div class="search-container">
+<div class="container">
     <!-- Page Heading -->
     <h1 class="mt-5">Search Profiles</h1>
     
     <!-- Form Group for Search Input -->
-    <div class="form-group mt-4">
+    <div class="form-group">
         <!-- Label for the search input field -->
         <label for="searchName">Enter Name:</label>
         <!-- Input field for entering the name to search -->
@@ -20,7 +20,7 @@
     </button>
     
     <!-- Container to display search results -->
-    <div id="results" class="mt-4"></div>
+    <div id="results"></div>
 </div>
 
 <!-- JavaScript file for handling search functionality -->
