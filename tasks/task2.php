@@ -1,8 +1,11 @@
 <?php
-// Include the database configuration file for database connection
-include __DIR__ . '/../config/db.php';
+/**
+ * This script handles profile searches and displays results.
+ * It includes logic to process search requests and uses a controller to fetch and display profiles.
+ */
 
-// // Include the necessary model and controller files
+// Include the database configuration file to establish a database connection
+require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/../models/ProfileModel.php';
 require_once __DIR__ . '/../controllers/ProfileController.php';
 

@@ -14,7 +14,8 @@ FROM emails e
 JOIN profiles p ON e.UserRefID = p.UserRefID 
 WHERE p.Deceased = 0 
 GROUP BY e.UserRefID, e.emailaddress 
-HAVING COUNT(*) > 1 AND MAX(e.`Default`) = 1; 
+HAVING COUNT(*) > 1 
+AND MAX(e.Default) = 1; 
                                              
 </p></div>";
 

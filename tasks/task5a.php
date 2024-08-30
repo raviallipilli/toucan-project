@@ -1,12 +1,10 @@
 <?php
-/**
- * Member Management Script
- * 
+/** 
  * This script handles the logic for adding new members and displaying members by school.
  * It interacts with the database through models and controllers and renders the appropriate views.
  */
 
-// Include necessary configurations, models, and controllers
+// Include necessary files for database connection, models, and controller
 require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/../models/MemberModel.php';
 require_once __DIR__ . '/../models/SchoolModel.php';

@@ -1,4 +1,10 @@
 <?php
+/**
+* This script generates reports that display a list of schools and their member counts.
+* It includes an option to download the report as a CSV file and extends the functionality with a country filter.
+ * It interacts with the database through models and controllers and renders the appropriate views.
+ */
+
 // Include necessary files for database connection, models, and controller
 require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/../models/MemberModel.php';
