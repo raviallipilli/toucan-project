@@ -9,7 +9,7 @@ echo "<div style=text-align:left;background-color:black;color:white;margin:30px;
 SELECT s.school_name 
 FROM schools s 
 LEFT JOIN members m ON s.school_id = m.school_id 
-WHERE m.school_id IS NULL; 
+WHERE m.id IS NULL; 
 
 </p></div>";
 
