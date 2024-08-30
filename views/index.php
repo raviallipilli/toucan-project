@@ -15,13 +15,13 @@
     <li><a href="/task3">Task 3: ToucanTech Print</a></li>
     
     <!-- Link to Task 4: Legacy PHP Function -->
-    <li><a href="/task4">Task 4: Legacy PHP Function</a></li>
+    <li><a href="/task4">Task 4: Legacy PHP Function - Code Review</a></li>
     
     <!-- Link to Task 5a: Add Member & View by School -->
     <li><a href="/task5a">Task 5a: Add Member & View by School</a></li>
     
     <!-- Link to Task 5b: School Member Count & CSV -->
-    <li><a href="/task5b">Task 5b: School Member Count & CSV</a></li>
+    <li><a href="/task5b">Task 5b: School Member Count & Download CSV</a></li>
     
     <!-- Link to Task 5c: SQL Query -->
     <li><a href="/task5c">Task 5c: SQL Query</a></li>
