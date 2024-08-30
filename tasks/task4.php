@@ -89,11 +89,11 @@ class UserEmailValidator { // class name is missing , hence named the class as a
     }
 }
 // wrap the result inside the body tag with header
-include '../views/header.php';
+include __DIR__ . '/../views/header.html';
 
 echo "<h1 style=text-align:center;>Please visit the file tasks/task4.php for code review</h1>";
 
 // close the footer
-include '../views/footer.php';
+include __DIR__ . '/../views/footer.html';
 
 ?>

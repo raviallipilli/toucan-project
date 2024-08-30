@@ -7,10 +7,10 @@
  */
 
 // Include necessary configurations, models, and controllers
-require_once '../config/db.php'; 
-require_once '../models/MemberModel.php'; 
-require_once '../models/SchoolModel.php'; 
-require_once '../controllers/MemberController.php'; 
+require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/../models/MemberModel.php';
+require_once __DIR__ . '/../models/SchoolModel.php';
+require_once __DIR__ . '/../controllers/MemberController.php';
 
 // Initialize the MemberController with the database connection
 $controller = new MemberController($conn);
@@ -59,5 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['school'])) {
 }
 
 // Include the view to render the HTML page
-include '../views/members-view.php';
+include __DIR__ . '/../views/members-view.html';
+
 ?>

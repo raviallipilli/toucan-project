@@ -11,7 +11,7 @@ $(document).ready(function() {
 
         // Perform an AJAX request to the server
         $.ajax({
-            url: 'task2.php', // The URL of the PHP script handling the request
+            url: 'task2', // The URL of the PHP script handling the request
             type: 'POST', // Use POST method to send data
             data: { name: name }, // Data to be sent to the server
             success: function(response) {

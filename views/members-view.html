@@ -1,10 +1,10 @@
-<?php include 'header.php'; ?>
+<?php include 'header.html'; ?>
 
 <h1>Add New Member</h1>
 
 <!-- Form to add a new member -->
 <!-- The form uses POST method to submit data to the current page -->
-<form method="POST">
+<form method="POST" action="../tasks/task5a">
 
     <!-- Display success or error messages -->
     <?php if (isset($_GET['msg'])) { ?>
@@ -86,4 +86,4 @@
 <!-- JavaScript for fading out messages -->
 <script src="../assets/js/fadeOut.js"></script>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer.html'; ?>

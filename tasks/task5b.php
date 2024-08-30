@@ -1,9 +1,9 @@
 <?php
 // Include necessary files for database connection, models, and controller
-require_once '../config/db.php';       
-require_once '../models/MemberModel.php'; 
-require_once '../models/SchoolModel.php'; 
-require_once '../controllers/MemberController.php'; 
+require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/../models/MemberModel.php';
+require_once __DIR__ . '/../models/SchoolModel.php';
+require_once __DIR__ . '/../controllers/MemberController.php';
 
 // Initialize the controller with the database connection
 $controller = new MemberController($conn);
@@ -55,5 +55,5 @@ $schoolCounts = $controller->getSchoolMemberCounts($countryFilter);
 $schools = $controller->getSchools();
 
 // Include the view file to render the HTML
-include '../views/reports.php';
+include __DIR__ . '/../views/reports.html';
 ?>

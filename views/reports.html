@@ -1,10 +1,10 @@
-<?php include 'header.php'; ?>
+<?php include 'header.html'; ?>
 
 <div class="container">
     <h1>School Member Counts: Reports</h1>
 
     <!-- Form to filter by country and select schools for CSV download -->
-    <form method="GET" action="task5b.php">
+    <form method="GET" action="task5b">
         <!-- Country filter input -->
         <div class="form-group">
             <label for="country">Filter by Country</label>
@@ -13,8 +13,8 @@
         </div>
 
         <!-- Filter button to trigger country filtering -->
-        <button type="submit" name="filter" value="true" class="btn btn-secondary mb-3"><i class="fa-solid fa-filter"></i>
-            Filter
+        <button type="submit" name="filter" value="true" class="btn btn-secondary mb-3">
+            <i class="fa-solid fa-filter"></i> Filter
         </button>
         
         <hr>
@@ -76,34 +76,24 @@
     <h1>Chart View:</h1>
     <h2>Member Counts by School</h2>
     <canvas id="reports-chart"></canvas>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        var ctx = document.getElementById('reports-chart').getContext('2d');
-        var reportsChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: <?php echo json_encode(array_column($schoolCounts, 'school_name')); ?>,
-                datasets: [{
-                    label: 'Number of Members',
-                    data: <?php echo json_encode(array_column($schoolCounts, 'member_count')); ?>,
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
+
+    <!-- Embed chart data in hidden script tags -->
+    <script type="application/json" id="chart-labels">
+        <?php echo json_encode(array_column($schoolCounts, 'school_name')); ?>
     </script>
+    <script type="application/json" id="chart-data">
+        <?php echo json_encode(array_column($schoolCounts, 'member_count')); ?>
+    </script>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Include external JavaScript file for chart -->
+    <script src="../assets/js/reports-chart.js"></script>
 
     <!-- JavaScript for "Check All" functionality -->
     <script src="../assets/js/reports.js"></script>
     
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer.html'; ?>

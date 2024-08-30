@@ -1,7 +1,7 @@
 <?php 
 
 // wrap the result inside the body tag with header
-include '../views/header.php';
+include __DIR__ . '/../views/header.html';
 
 echo "<div style=text-align:left;background-color:black;color:white;margin:30px;padding:20px;><p>
 -- Select email addresses from the 'emails' table <br>
@@ -19,6 +19,6 @@ HAVING COUNT(*) > 1 AND MAX(e.`Default`) = 1;
 </p></div>";
 
 // close the footer
-include '../views/footer.php';
+include __DIR__ . '/../views/footer.html';
 ?>
 

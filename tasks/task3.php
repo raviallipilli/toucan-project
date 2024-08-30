@@ -1,7 +1,7 @@
 <?php
 
 // wrap the result inside the body tag with header
-include '../views/header.php';
+include __DIR__ . '/../views/header.html';
 
 /**
  * Generates a sequence of numbers from 1 to 100 with specific rules:
@@ -30,5 +30,5 @@ for ($i = 1; $i <= 100; $i++) {
 echo "</p></div>";
 
 // close the footer
-include '../views/footer.php';
+include __DIR__ . '/../views/footer.html';
 ?>

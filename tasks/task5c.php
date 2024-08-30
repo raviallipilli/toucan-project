@@ -1,7 +1,7 @@
 <?php 
 
 // wrap the result inside the body tag with header
-include '../views/header.php';
+include __DIR__ . '/../views/header.html';
 
 echo "<div style=text-align:left;background-color:black;color:white;margin:30px;padding:20px;><p>
 -- Select the names of schools that have no members associated with them <br>
@@ -14,7 +14,7 @@ WHERE m.school_id IS NULL;
 </p></div>";
 
 // close the footer
-include '../views/footer.php';
+include __DIR__ . '/../views/footer.html';
 ?>
 
 
